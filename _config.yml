@@ -1,0 +1,49 @@
+### your site title here
+
+title: Your Name
+description: subtitle | affiliations | motto
+
+baseurl: /hagura # name of the repository
+email: your@email.com
+
+highlighter: rouge
+markdown: kramdown
+
+# Tracker
+analytics:
+
+# Comments
+disqus-shortname: 
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+#collection
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate

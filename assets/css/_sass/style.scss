@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+}
+
+body {
+        max-width: $content-width;
+        font-family: $base-font-family;
+        margin: 0 auto;
+        line-height: $base-line-height;
+        font-size: $base-font-size;
+        color: $text-color;
+        padding: 2em 1em;
+        text-rendering: optimizeLegibility;
+        height: 100%;
+        @include media-query($on-palm) {
+            max-width: 100%;
+            padding: 1em;
+        }
+
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+         font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+         font-weight: bold;
+         line-height: 1.8;
+         margin: 0;
+         text-transform: capitalize;
+    }
+
+
+a {
+    color: $brand-color;
+    text-decoration: none;
+    &:hover{
+     color: $text-color;
+    }
+}
+
+
+
+p a {
+    color: $text-color;
+    text-decoration: none;
+    background: -webkit-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+    background: -moz-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+    background: linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+
+    -webkit-box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
+    box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
+
+
+    -webkit-transition: box-shadow ease 1s;
+	-moz-transition: box-shadow ease 1s;
+	transition: box-shadow ease 1s;
+    &:hover {
+        color: lighten($background-color, 50%);
+        -webkit-box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
+        box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
+
+    }
+}
+
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre,
+code {
+    overflow: auto;
+    font-size: 0.7*$base-font-size;
+    border-radius: 3px;
+    border: 1px solid $brand-color;
+    > code {
+        border: none;
+    }
+}
+
+pre {
+        padding: 1em;
+    }
+
+code {
+    padding: 0.1em;
+    }
+
+blockquote {
+    border-left: 2px solid $brand-color;
+    padding-left: 1em;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 0.9*$base-font-size;
+    font-style: italic;
+    }
+
+
+.headline, .post-headline {
+    font-size: 2em;
+    margin-bottom: -0.4em;
+
+        @include media-query($on-palm) {
+            font-size: 2em;
+        }
+    }
+
+/* Profile */
+.profile {
+    border-style: solid;
+    border-color: gray;
+    margin: 15px 15px 15px 15px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Projects */
+.project { box-sizing: border-box; float: left; height: 250px; padding: 15px; vertical-align: middle; width: 33.33%; }
+.project .thumbnail { background-color: #c8e9d2; overflow: hidden; height: 200px; width: 100%; }
+.project .thumbnail img { height: auto; position: relative; left: -25%; top: -5%; width: 500px; }
+.project .thumbnail a { float: left; height: 230px; position: relative; width: 100%; }
+.project .thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.4); color: $text-color ; padding: 10px; text-align: center; }
+.project .thumbnail a span h1 { font-size: 1.5rem; margin: 0; }
+.project .thumbnail a span p { color: $text-color; }
+.project .thumbnail a:hover span { display: block; }
+
+.clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after { content: ' '; display: table; }
+.clearfix:after, .wrapper:after { clear: both; }
+
+
+/* Article list in index/home page */
+.article-list {
+    margin: 1em 0;
+}
+
+
+/* Add video class for iframes to make them responsive */
+.video {
+    width: 100%;
+    height: 360px;
+    @include media-query($on-laptop) {
+        height: 300px;
+    }
+    @include media-query($on-palm) {
+        height: 180px;
+    }
+}
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: decimal;
+}
+
+#markdown-toc {
+    border: 1px solid $brand-color;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+
+/* Theme switch button */
+.theme {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 2em;
+}
+
+/* Footer navigation links */
+.links a {
+    margin-right: 1em;
+}
+
+/* Footer copyrights */
+.copy {
+    color: #aaa;
+}
+
+/* Horizontal Divider */
+.divider {
+    margin: 1em 0;
+}

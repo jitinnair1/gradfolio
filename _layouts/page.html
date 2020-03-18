@@ -1,0 +1,48 @@
+---
+# layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+
+        <h1 class="post-headline">{{site.title}}</h1>
+        <h3 class="post-description">{{site.description}}</h5>
+
+        <div class="links">
+                <a href="{{site.baseurl}}/">Home</a>
+                <a href="{{site.baseurl}}/projects/">Projects</a>
+                <a href="{{site.baseurl}}/publications/">Publications</a>
+                <a href="{{site.baseurl}}/gallery/">Gallery</a>
+                <a class="theme" onclick="theme()">Dark/Light</a>
+        </div>
+
+        {% seo %}
+        
+    </head>
+
+    <body style="background-color: rgb(255, 255, 255)">
+        <script async src="{{site.baseurl}}/assets/js/theme.min.js"></script>
+
+        <main>
+            <article class="clearfix">
+                {{ content }}
+            </article>
+        </main>
+
+        <footer>
+            <p class="copy">
+                <small>Copyrights by
+                    {{site.title}}
+                    | Developed by
+                    <a href="http://webjeda.com">webjeda</a>
+                </small>
+            </p>
+        </footer>
+        {% include analytics.html %}
+    </body>
+
+</html>
