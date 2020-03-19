@@ -1,6 +1,6 @@
 ## Hagura-Academic
 
-Hagura-Academic is a responsive, dark-mode ready theme made for academia. It is based on [Hagura](http://webjeda.com/hagura) developed by [WebJeda](http://webjeda.com)
+Responsive, dark-mode ready theme made for academia. Based on [Hagura](http://webjeda.com/hagura).
 
 ## Features
 - Responsive
