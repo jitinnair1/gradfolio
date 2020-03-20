@@ -1,0 +1,23 @@
+$base-font-family: 'Work Sans', sans-serif;
+$base-font-size:   20px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.7;
+
+$spacing-unit:     30px;
+
+$text-color:       #333;
+$background-color: #fdfdfd;
+$brand-color:      #60c17d;
+
+// Color scheme for light
+$light: #ff0066;
+$body-bg: #fdfdfd;
+$projectbox: #D8EBB5;
+$text-color: #333;
+
+// Color scheme for dark modes
+$dark: #1ba77e;
+$body-bg-dark: #061725;
+$projectbox-dark: #687466;
+$text-color-dark: #777;

@@ -9,14 +9,20 @@ body {
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
+        background-color: $body-bg;
         padding: 2em 1em;
         text-rendering: optimizeLegibility;
         height: 100%;
-        @include media-query($on-palm) {
+
+          @include media-query($on-palm){
             max-width: 100%;
             padding: 1em;
         }
 
+          @media (prefers-color-scheme: dark) {
+          background-color: $body-bg-dark;
+          color: $text-color-dark;
+        }
     }
 
     h1,h2,h3,h4,h5,h6 {
@@ -33,6 +39,11 @@ a {
     text-decoration: none;
     &:hover{
      color: $text-color;
+
+     @media (prefers-color-scheme: dark) {
+     color: $text-color-dark;
+
+
     }
 }
 
@@ -58,6 +69,9 @@ p a {
         box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
 
     }
+
+    @media (prefers-color-scheme: dark) {
+    color: $text-color-dark;
 }
 
 
@@ -166,6 +180,9 @@ blockquote {
   color: $text-color ;
   padding: 10px;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+  color: $text-color-dark;
 }
 
 .project .thumbnail a span h1 {
@@ -184,6 +201,9 @@ blockquote {
   color: $text-color;
   position: relative;
   display: none;
+
+  @media (prefers-color-scheme: dark) {
+  color: $text-color-dark;
 }
 
 .project .thumbnail:hover a span p {
@@ -191,6 +211,9 @@ blockquote {
   position: relative;
   top: -10%;
   display: block;
+
+  @media (prefers-color-scheme: dark) {
+  color: $text-color-dark;
 }
 
 .project .thumbnail a:hover span {
@@ -205,7 +228,11 @@ blockquote {
 .clearfix:after, .wrapper:after { clear: both; }
 
 .blankbox {
-  background: #D8EBB5;
+  background: $projectbox;
+
+  @media (prefers-color-scheme: dark) {
+  background: $projectbox-dark;
+  }
 }
 
 /* Article list in index/home page */
