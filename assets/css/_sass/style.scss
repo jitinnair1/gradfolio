@@ -14,7 +14,7 @@ body {
         text-rendering: optimizeLegibility;
         height: 100%;
 
-          @include media-query($on-palm){
+          @include media-query($on-palm) {
             max-width: 100%;
             padding: 1em;
         }
@@ -42,7 +42,7 @@ a {
 
      @media (prefers-color-scheme: dark) {
      color: $text-color-dark;
-
+   }
 
     }
 }
@@ -72,6 +72,7 @@ p a {
 
     @media (prefers-color-scheme: dark) {
     color: $text-color-dark;
+  }
 }
 
 
@@ -184,6 +185,7 @@ blockquote {
   @media (prefers-color-scheme: dark) {
   color: $text-color-dark;
 }
+}
 
 .project .thumbnail a span h1 {
   font-size: 1.5rem;
@@ -205,6 +207,7 @@ blockquote {
   @media (prefers-color-scheme: dark) {
   color: $text-color-dark;
 }
+}
 
 .project .thumbnail:hover a span p {
   color: $text-color;
@@ -214,6 +217,7 @@ blockquote {
 
   @media (prefers-color-scheme: dark) {
   color: $text-color-dark;
+}
 }
 
 .project .thumbnail a:hover span {
