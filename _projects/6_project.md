@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Project 2
-description: a project with a background image
+title: Project 6
+description: another project
 img:
 ---
 

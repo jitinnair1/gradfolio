@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Project 5
-description: a project with a background image
+title: Short Project
+description: description of the short project which is long enough
 img:
 ---
 

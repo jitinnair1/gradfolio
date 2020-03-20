@@ -5,10 +5,12 @@ permalink: /projects/
 published: true
 ---
 
+<div class="projectContainer">
+
 {% for project in site.projects %}
 
 {% if project.redirect %}
-<div class="project">
+<div class="projectTile">
     <div class="thumbnail">
         <a href="{{ project.redirect }}" target="_blank">
         {% if project.img %}
@@ -26,7 +28,7 @@ published: true
 </div>
 {% else %}
 
-<div class="project ">
+<div class="projectTile ">
     <div class="thumbnail">
         <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
         {% if project.img %}
@@ -46,3 +48,5 @@ published: true
 {% endif %}
 
 {% endfor %}
+
+</div>
