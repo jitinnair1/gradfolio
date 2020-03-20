@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
         <h1 class="post-headline">{{site.title}}</h1>
-        <h3 class="post-description">{{site.description}}</h5>
+        <h3 class="post-description">{{site.description}}</h3>
 
         <div class="links">
                 <a href="{{site.baseurl}}/">Home</a>
@@ -34,14 +34,16 @@
         </main>
 
         <footer>
-            <p class="copy">
-                <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
+          <p class="copy">
+            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
                     | Powered by Jekyll and
                     <a target="_blank" href="https://github.com/jitinnair1/hagura-academic/">Hagura-Academic</a>
-                </small>
-            </p>
+            </small>
+          </p>
         </footer>
+
         {% include analytics.html %}
+
     </body>
 
 </html>
