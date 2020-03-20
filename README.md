@@ -4,16 +4,18 @@ Responsive, dark-mode ready theme made for academia. Based on [Hagura](http://we
 
 ## Features
 - Responsive
-- Dark Mode Toggle
-- Project Page
+- Respects Dark Mode preference set by user
+- Project Showcase
 
-## To Do
+## Planned Features
 - [ ] Bibliography
 - [ ] Gallery
 - [ ] Team Members
 - [ ] Blog
 - [ ] News/Updates Section
 - [ ] Add installation via deploy script and/or gem
+- [ ] Change thumbnail layout on project page for mobile pages
+- [ ] Add background images as project thumbnails from link or images stored in assets/images/
 
 ## Installation
 * Fork the repository

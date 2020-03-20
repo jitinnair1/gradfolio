@@ -19,5 +19,5 @@ $text-color: #333;
 // Color scheme for dark modes
 $dark: #1ba77e;
 $body-bg-dark: #061725;
-$projectbox-dark: #687466;
+$projectbox-dark: lighten($body-bg-dark, 10%);;
 $text-color-dark: #777;
