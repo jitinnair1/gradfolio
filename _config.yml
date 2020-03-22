@@ -3,7 +3,7 @@
 title: Your Name
 description: subtitle | affiliations | motto
 
-baseurl: /hagura-academic # name of the repository
+baseurl: / # name of the repository
 email: your@email.com
 
 highlighter: rouge
