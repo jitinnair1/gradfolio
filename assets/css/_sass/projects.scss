@@ -99,4 +99,15 @@
   }
 }
 
+// adjust tile sizes on smaller screens
+@include media-query($on-phone) {
+  .projectContainer .projectTile {
+    width: 100%;
+  }
+}
+
+@include media-query($on-laptop) {
+  .projectContainer .projectTile {
+    width: 50%;
+  }
 }
