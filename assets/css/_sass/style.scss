@@ -14,11 +14,6 @@ body {
         text-rendering: optimizeLegibility;
         height: 100%;
 
-          @include media-query($on-palm) {
-            max-width: 100%;
-            padding: 1em;
-        }
-
           @media (prefers-color-scheme: dark) {
           background-color: $body-bg-dark;
           color: $text-color-dark;
