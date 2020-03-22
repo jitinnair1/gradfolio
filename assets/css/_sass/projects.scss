@@ -45,9 +45,10 @@
   background: rgba(0, 0, 0, 0.1);
   color: $text-color ;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  //justify-content: center;
   text-align: center;
   vertical-align: middle;
 
@@ -59,7 +60,7 @@
 
 .projectTile .thumbnail a span h1 {
   position: relative;
-  top: 10%;
+  top: 25%;
   font-size: 1.5rem;
 }
 
@@ -70,6 +71,7 @@
 
 .projectTile .thumbnail a span p {
   display: none;
+  top:-10%;
   position: relative;
   color: $text-color;
 
@@ -107,24 +109,22 @@
       width: 50%;
     }
 
-    .projectTile .thumbnail a span h1{
-      display: block;
-      top: 10%;
+    .projectTile .thumbnail a span h1 {
+      top: 0%;
     }
 
     .projectTile .thumbnail:hover a span h1 {
       display: block;
-      top: 10%;
+      top: 0%;
     }
 
     .projectTile .thumbnail a span p {
-        display: block;
-        top: -10%;
+      display: block;
+      top:-30%;
     }
 
     .projectTile .thumbnail:hover a span p {
-        display: block;
-        top: -10%;
+      top:-30%;
     }
 
     }
@@ -137,21 +137,21 @@
     }
 
     .projectTile .thumbnail a span h1 {
-      display: block;
-      top:20%;
+      top: 0%;
     }
 
     .projectTile .thumbnail:hover a span h1 {
       display: block;
+      top: 0%;
     }
 
     .projectTile .thumbnail a span p {
-        display: block;
-        top:-10%;
+      display: block;
+      top:-30%;
     }
 
     .projectTile .thumbnail:hover a span p {
-      display: block;
+      top:-30%;
     }
 }
 }
