@@ -12,6 +12,7 @@
   width: 33.33%;
   margin-top: 1em;
   margin-bottom: 1em;
+
 }
 
 .projectTile .thumbnail {
@@ -32,7 +33,7 @@
 
 .projectTile .thumbnail a {
   float: left;
-  height: 230px;
+  height: 200px;
   position: relative;
   width: 100%;
 }
@@ -56,13 +57,13 @@
 .projectTile .thumbnail a span h1 {
   font-size: 1.5rem;
   position: relative;
-  top: 30%
+  top: 20%;
 }
 
 .projectTile .thumbnail:hover a span h1 {
   font-size: 1.5rem;
   position: relative;
-  top: 10%
+  top: 10%;
 }
 
 .projectTile .thumbnail a span p {
@@ -90,17 +91,12 @@
   display: block;
 }
 
-.clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after {
-  content: '';
-  display: table;
- }
-
-.clearfix:after, .wrapper:after { clear: both; }
-
 .blankbox {
   background: $projectbox;
 
   @media (prefers-color-scheme: dark) {
   background: $projectbox-dark;
   }
+}
+
 }
