@@ -1,10 +1,3 @@
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-
-
 <div class="rounded-social-buttons">
 
 {%- if site.email -%}
@@ -12,24 +5,6 @@ crossorigin="anonymous"></script>
 class="social-button email" itemprop="email"
 href="mailto:{{ site.email }}" target="_blank">
 <i class="far fa-envelope"></i>
-</a>
-{%- endif -%}
-
-{%- if site.facebook -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'Facebook' }}"
-class="social-button facebook" itemprop="sameAs"
-href="https://www.facebook.com/{{ site.facebook }}"
-target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-{%- endif -%}
-
-{%- if site.twitter -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}"
-class="social-button twitter"
-href="https://www.twitter.com/{{ site.twitter }}" itemprop="sameAs"
-target="_blank">
-<i class="fab fa-twitter"></i>
 </a>
 {%- endif -%}
 
@@ -42,10 +17,9 @@ target="_blank">
 </a>
 {%- endif -%}
 
-
 {%- if site.github -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'GitHub' }}"
-class="social-button linkedin"
+class="social-button github"
 href="https://www.github.com/{{ site.github }}" itemprop="sameAs"
 target="_blank">
 <i class="fab fa-github"></i>
@@ -54,7 +28,7 @@ target="_blank">
 
 {%- if site.researchgate -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'ResearchGate' }}"
-class="social-button linkedin"
+class="social-button researchgate"
 href="https://www.researchgate.net/profile/{{ site.researchgate }}" itemprop="sameAs"
 target="_blank">
 <i class="fab fa-researchgate"></i>
@@ -62,11 +36,29 @@ target="_blank">
 {%- endif -%}
 
 {%- if site.orcid -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'OrcID' }}"
-class="social-button linkedin"
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Orcid' }}"
+class="social-button orcid"
 href="https://orcid.org/{{ site.orcid }}" itemprop="sameAs"
 target="_blank">
 <i class="fab fa-orcid"></i>
+</a>
+{%- endif -%}
+
+{%- if site.twitter -%}
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}"
+class="social-button twitter"
+href="https://www.twitter.com/{{ site.twitter }}" itemprop="sameAs"
+target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+{%- endif -%}
+
+{%- if site.facebook -%}
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Facebook' }}"
+class="social-button facebook" itemprop="sameAs"
+href="https://www.facebook.com/{{ site.facebook }}"
+target="_blank">
+<i class="fab fa-facebook-f"></i>
 </a>
 {%- endif -%}
 

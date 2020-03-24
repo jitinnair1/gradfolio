@@ -4,13 +4,13 @@ title: Your Name
 description: subtitle | affiliations | motto
 
 baseurl: # name of the repository
-email: your@email.com
+email: jitin.s.nair@gmail.com
 
-# Social media links
-facebook: nifft.baklol
+# Social media links in footer
+facebook:
 twitter: jitinnair1
 linkedin: jitinnair1
-githib: jitinnair1
+github: jitinnair1
 researchgate:
 orcid: 0000-0001-7004-9377
 
