@@ -1,7 +1,7 @@
-/* Social Icons for Footer from https://codepen.io/deutschland2k/pen/qKpdJX */
+/* Social Icons for Foorter from https://codepen.io/deutschland2k/pen/qKpdJX */
 
 .svg-inline--fa {
-  vertical-align: 0.900em;
+  vertical-align: 0.100em;
 }
 
 .rounded-social-buttons {
@@ -21,7 +21,7 @@
   color: #fefefe;
   font-size: 1.5625rem;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 2em;
   border-radius: 1.6875rem;
   transition: all 0.5s ease;
   margin-right: 0.25rem;
@@ -34,12 +34,14 @@
           transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-twitter,
+.rounded-social-buttons
+.fa-twitter,
 .fa-facebook-f,
 .fa-linkedin,
 .fa-github,
-.fa-orcid,
 .fa-researchgate,
+.fa-orcid,
+.fa-
 .fa-envelope {
   font-size: 25px;
 }
@@ -75,41 +77,21 @@
 }
 
 .rounded-social-buttons .social-button.github {
-  background: #000000;
+  background: #bb0000;
 }
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
-  color: #000000;
+  color: #bb0000;
   background: #fefefe;
-  border-color: #000000;
+  border-color: #bb0000;
 }
 
 .rounded-social-buttons .social-button.email {
-  background: #60c17d;
+  background: #bb0000;
 }
 
 .rounded-social-buttons .social-button.email:hover, .rounded-social-buttons .social-button.email:focus {
-  color: #60c17d;
+  color: #bb0000;
   background: #fefefe;
-  border-color: #000000;
-}
-
-.rounded-social-buttons .social-button.orcid {
-  background: #a6ce3b;
-}
-
-.rounded-social-buttons .social-button.orcid:hover, .rounded-social-buttons .social-button.orcid:focus {
-  color: #a6ce3b;
-  background: #fefefe;
-  border-color: #a6ce3b;
-}
-
-.rounded-social-buttons .social-button.researchgate {
-  background: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.researchgate:hover, .rounded-social-buttons .social-button.researchgate:focus {
-  color: #5dd1b0;
-  background: #fefefe;
-  border-color: #5dd1b0;
+  border-color: #bb0000;
 }
