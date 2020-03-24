@@ -3,8 +3,16 @@
 title: Your Name
 description: subtitle | affiliations | motto
 
-baseurl: / # name of the repository
+baseurl: # name of the repository
 email: your@email.com
+
+# Social media links
+facebook: nifft.baklol
+twitter: jitinnair1
+linkedin: jitinnair1
+githib: jitinnair1
+researchgate:
+orcid: 0000-0001-7004-9377
 
 highlighter: rouge
 markdown: kramdown
@@ -13,7 +21,7 @@ markdown: kramdown
 analytics:
 
 # Comments
-disqus-shortname: 
+disqus-shortname:
 
 #optimization
 #compress.html

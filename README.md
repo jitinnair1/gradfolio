@@ -13,9 +13,12 @@ Responsive, dark-mode ready theme made for academia. Based on [Hagura](http://we
 - [ ] Team Members
 - [ ] Blog
 - [ ] News/Updates Section
+
+## To-Do
 - [ ] Add installation via deploy script and/or gem
 - [ ] Change thumbnail layout on project page for mobile pages. When on mobile show description without hover
 - [ ] Add background images as project thumbnails from link or images stored in assets/images/
+- [ ] Add MathJax support
 
 ## Installation
 * Fork the repository
