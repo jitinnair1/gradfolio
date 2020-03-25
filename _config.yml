@@ -6,6 +6,15 @@ description: subtitle | affiliations | motto
 baseurl: # name of the repository
 email: jitin.s.nair@gmail.com
 
+
+highlighter: rouge
+markdown: kramdown
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
 # Social media links in footer
 facebook:
 twitter: jitinnair1
@@ -19,9 +28,6 @@ markdown: kramdown
 
 # Tracker
 analytics:
-
-# Comments
-disqus-shortname:
 
 #optimization
 #compress.html
@@ -56,27 +62,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-email-protect
-  - jekyll/scholar
+  - jekyll-archives
 
-# Jekyll-Scholar
-scholar:
-  last_name: Einstein
-
-  style: apa
-  locale: en
-
-  sort_by: year
-  order: descending
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-
-  query: "@*"
+# Jekyll archives
+jekyll-archives:
+  enabled: []
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
