@@ -12,7 +12,6 @@ markdown: kramdown
 
 # Pagination
 paginate: 4
-paginate_path: /blog/page:num/
 
 # Social media links in footer
 facebook:
