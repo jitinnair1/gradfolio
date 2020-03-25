@@ -2,8 +2,7 @@
 
 title: Your Name
 description: subtitle | affiliations | motto
-
-baseurl: # name of the repository
+baseurl: "" # name of the repository
 email: jitin.s.nair@gmail.com
 
 
@@ -12,8 +11,7 @@ markdown: kramdown
 
 # Pagination
 paginate: 4
-permalink: /:year/:title/
-paginate_path: /page:num/
+permalink: :title/
 
 # Social media links in footer
 facebook:
