@@ -12,11 +12,11 @@ Responsive, dark-mode ready theme made for academia.
 * Your new site should be ready at https://username.github.io/gradfolio/
 * Change content and add custom domain
 
-## Ideas stolen from the following themes
-- [Hagura](https://github.com/sharu725/hagura)
+## Based on
+- [hagura](https://github.com/sharu725/hagura)
 - [al-folio](https://github.com/alshedivat/al-folio)
-- [Noir](https://github.com/essentialenemy/noir)
-- [Jekyll TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme)
+- [noir](https://github.com/essentialenemy/noir)
+- [jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
 
 ## License
 MIT License
