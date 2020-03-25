@@ -12,8 +12,8 @@ markdown: kramdown
 
 # Pagination
 paginate: 4
-permalink: {{site.baseurl}}/blog/:year/:title/
-paginate_path: {{site.baseurl}}/blog/page:num/
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
 
 # Social media links in footer
 facebook:
