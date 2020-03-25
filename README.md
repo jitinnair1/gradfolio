@@ -1,4 +1,4 @@
-## Hagura-Academic
+# Gradfolio
 
 Responsive, dark-mode ready theme made for academia.
 
