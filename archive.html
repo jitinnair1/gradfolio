@@ -4,7 +4,7 @@ permalink: /archive/
 title: Archive
 ---
 
-<div class="post">
+<div>
 	{% for post in site.posts %}
 	{% unless post.next %}
 	<h3><small>{{ post.date | date: '%B %Y' }}</small></h3>
@@ -15,6 +15,6 @@ title: Archive
 	<h3><small>{{ post.date | date: '%B %Y' }}</small></h3>
 	{% endif %}
 	{% endunless %}
-    <a href="{{ post.url }}">{{ post.title }}{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}</a><br>
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
 	{% endfor %}
 </div>
