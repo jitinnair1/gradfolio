@@ -3,10 +3,13 @@ layout: about
 permalink: /
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.jpg
+  description: Your Name
 published: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite subreddit. You can put a picture in, too. The code is already in, just name your picture prof_pic.jpg and put it in the assets/images/ folder.
+[Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
 
-This has to be the home page and must include a photo and contact information. The photo must be aligned based on the option specified in the YAML of the about page.
+If you want to use this space to write your biography here, edit the `index.md` file. You can put a picture in, too. Rename your picture to `profile.jpg` and put it in the `assets/images/` folder.
+
+The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
