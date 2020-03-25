@@ -20,7 +20,7 @@ layout: default
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+      <span>{{ page }}</span>
     {% elsif page == 1 %}
       <a href="{{site.baseurl}}/">{{ page }}</a>
     {% else %}
