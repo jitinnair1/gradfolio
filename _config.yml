@@ -9,7 +9,7 @@ email: jitin.s.nair@gmail.com
 # Social media links in footer
 facebook:
 twitter: jitinnair1
-linkedin: in/jitinnair1 #prepend country code
+linkedin: jitinnair1
 github: jitinnair1
 researchgate:
 orcid: 0000-0001-7004-9377
@@ -55,3 +55,28 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll/scholar
+
+# Jekyll-Scholar
+scholar:
+  last_name: Einstein
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
