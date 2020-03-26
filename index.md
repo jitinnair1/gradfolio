@@ -4,7 +4,6 @@ permalink: /
 profile:
   align: right
   image: profile.png
-  description: Your Name
 published: true
 ---
 

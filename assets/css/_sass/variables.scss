@@ -11,13 +11,11 @@ $background-color: #fdfdfd;
 $brand-color:      #60c17d;
 
 // Color scheme for light
-$light: #ff0066;
 $body-bg: #fdfdfd;
-$projectbox: #D8EBB5;
+$projectbox: #cfe6a4;
 $text-color: #333;
 
 // Color scheme for dark modes
-$dark: #1ba77e;
 $body-bg-dark: #061725;
 $projectbox-dark: lighten($body-bg-dark, 10%);;
 $text-color-dark: #777;
