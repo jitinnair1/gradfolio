@@ -11,27 +11,27 @@
   width: 33.33%;
   margin-top: 1em;
   margin-bottom: 1em;
-
 }
 
 .projectTile .thumbnail {
-  overflow: auto;
+  overflow: hidden;
   height: 200px;
   width: 100%;
-  display: block;
 }
 
 .projectTile .thumbnail img {
-  height: auto;
   position: relative;
-  left: -25%;
-  top: -5%;
-  width: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 .projectTile .thumbnail a {
   float: left;
   position: relative;
+  text-align: center;
+  vertical-align: middle;
   height: 200px;
   width: 100%;
 }
@@ -44,13 +44,8 @@
   right: 0;
   background: rgba(0, 0, 0, 0.1);
   color: $text-color ;
-  padding: 1em;
   display: block;
-  // display: flex;
-  // flex-direction: column;
-  //justify-content: center;
-  text-align: center;
-  vertical-align: middle;
+
 
 
   @media (prefers-color-scheme: dark) {
@@ -60,7 +55,10 @@
 
 .projectTile .thumbnail a span h1 {
   position: relative;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   font-size: 1.5rem;
 }
 
@@ -71,7 +69,8 @@
 
 .projectTile .thumbnail a span p {
   display: none;
-  top:-10%;
+  padding: 1em;
+  top: 20%;
   position: relative;
   color: $text-color;
 
@@ -82,16 +81,17 @@
 
 .projectTile .thumbnail:hover a span p {
   display: block;
-  top: -10%;
+  position: relative;
+  padding: 1em;
+  top: 20%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   color: $text-color;
 
   @media (prefers-color-scheme: dark) {
   color: $text-color-dark;
 }
-}
-
-.projectTile .thumbnail a:hover span {
-  display: block;
 }
 
 .blankbox {
@@ -137,21 +137,21 @@
     }
 
     .projectTile .thumbnail a span h1 {
-      top: 0%;
+      top: 20%;
     }
 
     .projectTile .thumbnail:hover a span h1 {
       display: block;
-      top: 0%;
+      top: 20%;
     }
 
     .projectTile .thumbnail a span p {
       display: block;
-      top:-30%;
+      top:-10%;
     }
 
     .projectTile .thumbnail:hover a span p {
-      top:-30%;
+      top:-10%;
     }
 }
 }
