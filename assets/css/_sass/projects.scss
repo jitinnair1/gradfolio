@@ -1,157 +1,80 @@
 /* Project Page */
-.projectContainer {
-  width: 100%;
+.ProjectContainer {
+  max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.gallery {
+  display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
 }
 
 .projectTile {
-  box-sizing: border-box;
-  float: left;
-  height: 200px;
-  padding: 15px;
-  width: 33.33%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.projectTile .thumbnail {
-  overflow: hidden;
-  height: 200px;
-  width: 100%;
-}
-
-.projectTile .thumbnail img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-}
-
-.projectTile .thumbnail a {
-  float: left;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  height: 200px;
-  width: 100%;
-}
-
-.projectTile .thumbnail a span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.1);
-  color: $text-color ;
-  display: block;
-
-
-
-  @media (prefers-color-scheme: dark) {
-  color: $text-color-dark;
-}
-}
-
-.projectTile .thumbnail a span h1 {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  font-size: 1.5rem;
-}
-
-.projectTile .thumbnail:hover a span h1 {
-  display: none;
-  font-size: 1.5rem;
-}
-
-.projectTile .thumbnail a span p {
-  display: none;
-  padding: 1em;
-  top: 20%;
-  position: relative;
-  color: $text-color;
-
-  @media (prefers-color-scheme: dark) {
-  color: $text-color-dark;
-}
-}
-
-.projectTile .thumbnail:hover a span p {
-  display: block;
-  position: relative;
-  padding: 1em;
-  top: 20%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  color: $text-color;
-
-  @media (prefers-color-scheme: dark) {
-  color: $text-color-dark;
-}
-}
-
-.blankbox {
+  /* Minimum width of 200px and grow to fit available space */
+	flex: 1 0 200px;
+	border-radius: 15px;
   background: $projectbox;
+  @media (prefers-color-scheme: dark) {
+    background: $projectbox-dark;
+  }
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	display: table;
+}
+
+.projectTile a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projectTile a span {
+  display: flex;
+  justify-content: center;
+  color: $text-color ;
+  @media (prefers-color-scheme: dark) {
+  color: $text-color-dark;
+}
+}
+
+.projectTile a span h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.projectTile:hover a span h2 {
+  display: none;
+}
+
+.projectTile a span p {
+  display: none;
+}
+
+.projectTile:hover a span p {
+  font-size: 1.2rem;
+  display: flex;
+  padding: 1rem;
+  color: $text-color;
 
   @media (prefers-color-scheme: dark) {
-  background: $projectbox-dark;
-  }
+  color: $text-color-dark;
+}
 }
 
-// adjust tile sizes on smaller screens
-@include media-query($on-palm) {
-  @media screen and (max-width: $on-palm){
-    .projectTile {
-      width: 50%;
-    }
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 2rem;
+	}
 
-    .projectTile .thumbnail a span h1 {
-      top: 0%;
-    }
-
-    .projectTile .thumbnail:hover a span h1 {
-      display: block;
-      top: 0%;
-    }
-
-    .projectTile .thumbnail a span p {
-      display: block;
-      top:-30%;
-    }
-
-    .projectTile .thumbnail:hover a span p {
-      top:-30%;
-    }
-
-    }
-}
-
-@include media-query($on-phone) {
-  @media screen and (max-width: $on-phone){
-    .projectTile {
-      width: 100%;
-    }
-
-    .projectTile .thumbnail a span h1 {
-      top: 20%;
-    }
-
-    .projectTile .thumbnail:hover a span h1 {
-      display: block;
-      top: 20%;
-    }
-
-    .projectTile .thumbnail a span p {
-      display: block;
-      top:-10%;
-    }
-
-    .projectTile .thumbnail:hover a span p {
-      top:-10%;
-    }
-}
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
 }
