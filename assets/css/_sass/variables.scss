@@ -19,3 +19,8 @@ $text-color: #333;
 $body-bg-dark: #061725;
 $projectbox-dark: lighten($body-bg-dark, 10%);
 $text-color-dark: #777;
+
+// Colour palette for project boxes
+$theme1: ("one",#388087),("two", #6FB3B8),("three",#BADFE7),("four",#C2EDCE),("five",#F6F6F2);
+$theme2: ("one",#E8DFE0),("two", #8D9B6A),("three",#8A9EA7),("four",#DAB692),("five",#8F5B34);
+$theme3: ("one",#78AAC3),("two", #C4DEED),("three",#97C8D6),("four",#EEAB74),("five",#F3CD86), ("six",#F5A280);
