@@ -12,19 +12,11 @@
         <h1 class="post-headline">{{site.title}}</h1>
         <h3 class="post-description">{{site.description}}</h3>
 
-        <div class="links">
-                <a href="{{site.baseurl}}/">Home</a>
-                <a href="{{site.baseurl}}/projects/">Projects</a>
-                <a href="{{site.baseurl}}/blog/">Updates</a>
-                <a href="{{site.baseurl}}/archive/">Archive</a>
-        </div>
+        {% include navigation.html %}
 
         {% seo %}
 
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        {% include favicon.html %}
 
         <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
         <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>

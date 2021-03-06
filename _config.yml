@@ -3,8 +3,9 @@
 title: Your Name
 description: subtitle | affiliations | motto
 
-baseurl: # name of the repository
-email: jitin.s.nair@gmail.com
+baseurl: ""
+url:
+email: #
 
 
 highlighter: rouge
@@ -16,12 +17,12 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook:
-twitter: jitinnair1
-linkedin: jitinnair1
-github: jitinnair1
-researchgate:
-orcid: 0000-0001-7004-9377
+facebook: "#"
+twitter: "#"
+linkedin: "#"
+github: "#"
+researchgate: "#"
+orcid: "#"
 
 highlighter: rouge
 markdown: kramdown
