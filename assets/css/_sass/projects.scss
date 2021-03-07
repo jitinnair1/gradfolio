@@ -1,29 +1,29 @@
 /* Project Page */
 .ProjectContainer {
   max-width: 800px;
-	margin: 0 auto;
-	padding: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .gallery {
   display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
 }
 
 .projectTile {
   /* Minimum width of 200px and grow to fit available space */
-	flex: 1 0 200px;
-	border-radius: 15px;
+  flex: 1 0 200px;
+  border-radius: 15px;
   background: $projectbox;
   @media (prefers-color-scheme: dark) {
     background: $projectbox-dark;
   }
-	height: 200px;
-	width: 100%;
-	overflow: hidden;
-	display: table;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  display: table;
 }
 
 .projectTile a {
@@ -38,8 +38,8 @@
   justify-content: center;
   color: $text-color ;
   @media (prefers-color-scheme: dark) {
-  color: $text-color-dark;
-}
+    color: $text-color-dark;
+  }
 }
 
 .projectTile a span h2 {
@@ -62,21 +62,67 @@
   color: $text-color;
 
   @media (prefers-color-scheme: dark) {
-  color: $text-color-dark;
+    color: $text-color-dark;
+  }
 }
+
+@include media-query($on-phone) {
+  @media screen and (max-width: $on-phone){
+
+    .projectTile {
+      height: 80px;
+    }
+
+    .projectTile a span h2 {
+      font-size: 1.2rem;
+    }
+
+    .projectTile:hover a span p {
+      display: none;
+    }
+
+    .projectTile:hover a span h2 {
+      display: flex;
+    }
+
+
+  }
 }
+
+@include media-query($on-palm) {
+  @media screen and (max-width: $on-palm){
+
+    .projectTile {
+      height: 100px;
+    }
+
+    .projectTile a span h2 {
+      font-size: 1.3rem;
+    }
+
+    .projectTile:hover a span p {
+      display: none;
+    }
+
+    .projectTile:hover a span h2 {
+      display: flex;
+    }
+
+  }
+}
+
 
 @supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		grid-gap: 2rem;
-	}
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+  }
 
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
 }
 
 //Based on: https://codepen.io/GeorgePark/pen/vdqYom

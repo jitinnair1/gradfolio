@@ -20,17 +20,10 @@
 // adjust tile sizes on smaller screens
 @include media-query($on-phone) {
   @media screen and (max-width: $on-phone){
-    .left, .right {
-      float: none;
-      }
 
     .profile {
-      width: 80%;
-      clear: both;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 10%;
-      text-align: center;
-      }
+      width: 40%;
+    }
+
   }
 }
