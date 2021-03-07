@@ -3,8 +3,8 @@
 title: Your Name
 description: subtitle | affiliations | motto
 
-baseurl: ""
-url:
+baseurl: /gradfolio #name of GitHub repository
+url: #custom url to be used instead of GitHub repository
 email: #
 
 
