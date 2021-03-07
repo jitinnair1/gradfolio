@@ -116,36 +116,6 @@ blockquote {
         }
     }
 
-/* Article list in index/home page */
-.article-list {
-    margin: 1em 0;
-}
-
-/* Pagination style in index/home page */
-
-
-.pagination {
-    margin: 2em 0;
-    text-align: center;
-
-    a {
-      &:hover {
-        background-color: transparent;
-        color: #333;
-      }
-    }
-
-    a, span {
-      padding: 7px 18px;
-      border: 1px solid #eee;
-      margin-left: -4px;
-      margin-right: -4px;
-      background-color: transparent;
-      display: inline-block;
-    }
-}
-
-
 /* Add video class for iframes to make them responsive */
 .video {
     width: 100%;
@@ -156,25 +126,6 @@ blockquote {
     @include media-query($on-palm) {
         height: 180px;
     }
-}
-
-// Adding 'Contents' headline to the TOC
-#markdown-toc::before {
-    content: "Contents";
-    font-weight: bold;
-}
-
-
-// Using numbers instead of bullets for listing
-#markdown-toc ul {
-    list-style: decimal;
-}
-
-#markdown-toc {
-    border: 1px solid $brand-color;
-    padding: 1.5em;
-    list-style: decimal;
-    display: inline-block;
 }
 
 /* Horizontal Divider */
