@@ -1,134 +1,162 @@
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-        max-width: $content-width;
-        font-family: $base-font-family;
-        margin: 0 auto;
-        line-height: $base-line-height;
-        font-size: $base-font-size;
-        color: $text-color;
-        background-color: $body-bg;
-        padding: 2em 1em;
-        text-rendering: optimizeLegibility;
-        height: 100%;
+  max-width: $content-width;
+  font-family: $base-font-family;
+  margin: 0 auto;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  color: $text-color;
+  background-color: $body-bg;
+  padding: 2em 1em;
+  text-rendering: optimizeLegibility;
+  height: 100%;
 
-          @media (prefers-color-scheme: dark) {
-          background-color: $body-bg-dark;
-          color: $text-color-dark;
-        }
-    }
+  @media (prefers-color-scheme: dark) {
+    background-color: $body-bg-dark;
+    color: $text-color-dark;
+  }
+}
 
-    h1,h2,h3,h4,h5,h6 {
-         font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-         font-weight: bold;
-         line-height: 1.8;
-         margin: 0;
-         text-transform: inherit;
-    }
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+  margin: 0;
+  text-transform: inherit;
+}
 
 
 a {
-    color: $brand-color;
-    text-decoration: none;
-    &:hover{
-     color: $text-color;
+  color: $brand-color;
+  text-decoration: none;
+  &:hover{
+    color: $text-color;
 
-     @media (prefers-color-scheme: dark) {
-     color: $text-color-dark;
-   }
-
+    @media (prefers-color-scheme: dark) {
+      color: $text-color-dark;
     }
+
+  }
 }
 
 
 
 p a {
-    color: $text-color;
-    text-decoration: none;
-    background: -webkit-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
-    background: -moz-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
-    background: linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+  color: $text-color;
+  text-decoration: none;
+  background: -webkit-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+  background: -moz-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
+  background: linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
 
-    -webkit-box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
-    box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
+  -webkit-box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
+  box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
 
 
-    -webkit-transition: box-shadow ease 1s;
-	-moz-transition: box-shadow ease 1s;
-	transition: box-shadow ease 1s;
-    &:hover {
-        color: lighten($background-color, 50%);
-        -webkit-box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
-        box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
+  -webkit-transition: box-shadow ease 1s;
+  -moz-transition: box-shadow ease 1s;
+  transition: box-shadow ease 1s;
+  &:hover {
+    color: lighten($background-color, 50%);
+    -webkit-box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
+    box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
 
-    }
+  }
 
-    @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     color: $text-color-dark;
   }
 }
 
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 pre,
 code {
-    overflow: auto;
-    font-size: 0.7*$base-font-size;
-    border-radius: 3px;
-    border: 1px solid $brand-color;
-    > code {
-        border: none;
-    }
+  overflow: auto;
+  font-size: 0.7*$base-font-size;
+  border-radius: 3px;
+  border: 1px solid $brand-color;
+  > code {
+    border: none;
+  }
 }
 
 pre {
-        padding: 1em;
-    }
+  padding: 1em;
+}
 
 code {
-    padding: 0.1em;
-    }
+  padding: 0.1em;
+}
 
 blockquote {
-    border-left: 2px solid $brand-color;
-    padding-left: 1em;
-    font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 0.9*$base-font-size;
-    font-style: italic;
-    }
+  border-left: 2px solid $brand-color;
+  padding-left: 1em;
+  font-family: Georgia,Times,Times New Roman,serif;
+  font-size: 0.9*$base-font-size;
+  font-style: italic;
+}
 
 
 .headline, .post-headline {
-    font-size: 2em;
-    margin-bottom: -0.4em;
+  font-size: 2em;
+  margin-bottom: -0.4em;
 
-        @include media-query($on-palm) {
-            font-size: 2em;
-        }
+  @include media-query($on-palm) {
+    font-size: 2em;
+  }
+}
+
+/* Pagination style in index/home page */
+.pagination {
+  margin: 2em 0;
+  text-align: center;
+
+  a {
+    &:hover {
+      background-color: transparent;
+      color: #333;
     }
+  }
+
+  a, span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -4px;
+    margin-right: -4px;
+    background-color: transparent;
+    display: inline-block;
+  }
+}
+
 
 /* Add video class for iframes to make them responsive */
 .video {
-    width: 100%;
-    height: 360px;
-    @include media-query($on-laptop) {
-        height: 300px;
-    }
-    @include media-query($on-palm) {
-        height: 180px;
-    }
+  width: 100%;
+}
+
+/* Add video class for iframes to make them responsive */
+.video {
+  width: 100%;
+  height: 360px;
+  @include media-query($on-laptop) {
+    height: 300px;
+  }
+  @include media-query($on-palm) {
+    height: 180px;
+  }
 }
 
 /* Horizontal Divider */
 .divider {
-    margin: 1em;
+  margin: 1em;
 }
