@@ -2,10 +2,7 @@
 
 Responsive, dark-mode ready theme made for academia. [Here's a live demo](https://jitinnair1.github.io/gradfolio/)!
 
-
-![Gradfolio Template Homepage](https://user-images.githubusercontent.com/2485715/110633945-69500f80-81cf-11eb-898c-2f976a332f34.png)
-
-
+![Gradfolio Template Homepage](https://user-images.githubusercontent.com/2485715/110634179-acaa7e00-81cf-11eb-8846-062ecf961d1e.png)
 
 ## Features
 - Responsive
