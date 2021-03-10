@@ -1,6 +1,6 @@
 # Gradfolio
 
-Responsive, dark-mode ready theme made for academia. [Here's a live demo](https://jitinnair1.github.io/gradfolio/)!
+responsive, dark-mode ready Jekyll theme designed for grad students. [Here's a live demo](https://jitinnair1.github.io/gradfolio/)
 
 ![Gradfolio Template Homepage](https://user-images.githubusercontent.com/2485715/110634179-acaa7e00-81cf-11eb-8846-062ecf961d1e.png)
 
