@@ -8,9 +8,9 @@ Responsive, dark-mode ready theme made for academia.
 - Project Showcase
 
 ## Installation
-* Click on `Use This Template`
+* Click on `Use this template`
 * Your new site should be ready at https://username.github.io/gradfolio/
-* Change content and add custom domain
+* You can now modify the contents and personalise the template
 
 ## Based on
 - [hagura](https://github.com/sharu725/hagura)
