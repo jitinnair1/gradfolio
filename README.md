@@ -8,7 +8,7 @@ Responsive, dark-mode ready theme made for academia.
 - Project Showcase
 
 ## Installation
-* Fork the repository
+* Click on `Use This Template`
 * Your new site should be ready at https://username.github.io/gradfolio/
 * Change content and add custom domain
 
