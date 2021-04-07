@@ -160,3 +160,14 @@ blockquote {
 .divider {
   margin: 1em;
 }
+
+/* Horizontal scrolling navbar. From: https://is.gd/WuJxqy */
+.scroll {
+  white-space: nowrap; /* [1] */
+  overflow-x: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */ }
+
+/* [5] */
+.scroll::-webkit-scrollbar {
+  display: none; }
