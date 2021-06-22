@@ -3,8 +3,7 @@ layout: post
 title: Short Project
 description: description of the short project which is long enough
 ---
-
-Example taken from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
+Example modified from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
 
 H1 Header
 ============
@@ -106,28 +105,15 @@ doc](#an-h2-header). Here's a footnote [^1].
 
 Tables can look like this:
 
-Name           Size  Material      Color
-------------- -----  ------------  ------------
-All Business      9  leather       brown
-Roundabout       10  hemp canvas   natural
-Cinderella       11  glass         transparent
+| Header 1 | Header 2                   | Header 3 |
+|:--------:|:--------------------------:|:--------:|
+| data1a   | Data is longer than header | 1        |
+| d1b      | add a cell                 |          |
+| lorem    | ipsum                      | 3        |
+|          | empty outside cells        |          |
+| skip     |                            | 5        |
+| six      | Morbi purus                | 6        |
 
-Table: Shoes sizes, materials, and colors.
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-Keyword   Text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
 
 A horizontal rule follows.
 
@@ -155,7 +141,7 @@ Here's a "line block" (note how whitespace is honored):
 
 and images can be specified like so:
 
-![example image](example-image.jpg "An exemplary image")
+![example image](https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop "An exemplary image")
 
 Inline math equation: $\omega = d\phi / dt$. Display
 math should get its own line like so:
