@@ -1,7 +1,7 @@
 ### your site title here
 
-title: Your Name
-description: subtitle | affiliations | motto
+title: Tanea Taylor
+description: Howard University Alum
 
 baseurl: "" #name of GitHub repository
 url: "https://ttayloraspm.github.io" #custom url to be used instead of GitHub repository
@@ -17,12 +17,12 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook: "#"
-twitter: "#"
-linkedin: "#"
-github: "#"
-researchgate: "#"
-orcid: "#"
+#facebook: "#"
+#twitter: "#"
+linkedin: "tanea-taylor-aa8960149/"
+#github: "#"
+#researchgate: "#"
+#orcid: "#"
 
 highlighter: rouge
 markdown: kramdown
