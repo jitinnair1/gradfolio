@@ -18,7 +18,7 @@ look like:
   * that one
   * the other one
 
-Note that --- not considering the asterisk --- the actual text
+Note that the actual text
 content starts at 4-columns in.
 
 > Block quotes are
@@ -26,10 +26,6 @@ content starts at 4-columns in.
 >
 > They can span multiple paragraphs,
 > if you like.
-
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
 
 
 H2 Header
@@ -57,7 +53,7 @@ define foobar() {
 ~~~
 
 (which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+delimited block for Pandoc to syntax highlight it by specifying the languagae after the start of a block (e.g. `~~~python`) which would look like :
 
 ~~~python
 import time
@@ -68,9 +64,7 @@ for i in range(10):
     print(i)
 ~~~
 
-
-
-### An h3 header ###
+### An H3 header ###
 
 Now a nested list:
 
@@ -98,9 +92,7 @@ Now a nested list:
 Notice again how text always lines up on 4-space indents (including
 that last line which continues item 3 above).
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+Here's a footnote [^1].
 
 [^1]: Some footnote text.
 
@@ -142,12 +134,9 @@ Here's a "line block" (note how whitespace is honored):
 
 and images can be specified like so:
 
-![example image](https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop "An exemplary image")
+![example image](https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=300&h=300&fit=crop "An exemplary image")
 
 Inline math equation: $\omega = d\phi / dt$. Display
 math should get its own line like so:
 
 $$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
