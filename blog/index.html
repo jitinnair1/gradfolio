@@ -22,7 +22,7 @@ layout: default
     {% if page == paginator.page %}
       <span>{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{site.baseurl}}/">{{ page }}</a>
+      <a href="{{site.baseurl}}/blog">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
