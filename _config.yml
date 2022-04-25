@@ -17,12 +17,16 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook: "#"
 twitter: "#"
 linkedin: "#"
+stackoverflow: "#"
 github: "#"
 researchgate: "#"
 orcid: "#"
+quora: "#"
+instagram: "#"
+facebook: "#"
+
 
 highlighter: rouge
 markdown: kramdown
