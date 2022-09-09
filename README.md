@@ -21,13 +21,4 @@ The `--incremental` flag ensures that any changes you make are reflected in your
 
 Once you have personalised and tested the site, you can create a new repo, upload these files and host your website from the repo.
 
-## Based on
-- [hagura](https://github.com/sharu725/hagura)
-- [al-folio](https://github.com/alshedivat/al-folio)
-- [noir](https://github.com/essentialenemy/noir)
-- [jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
-
-## License
-MIT License
-
-[![JekyllThemes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com)
+<a href="https://www.buymeacoffee.com/jitinnair" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
