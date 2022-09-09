@@ -7,30 +7,31 @@ baseurl: /gradfolio #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
 email: #
 
-
-highlighter: rouge
-markdown: kramdown
-
 # Pagination
 paginate: 4
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook: "#"
 twitter: "#"
 linkedin: "#"
+stackoverflow: "#"
 github: "#"
 researchgate: "#"
 orcid: "#"
+quora: "#"
+instagram: "#"
+facebook: "#"
 
+
+# Markdown
 highlighter: rouge
 markdown: kramdown
 
 # Tracker
 analytics:
 
-#optimization -> compress.html
+# optimization -> compress.html
 compress_html:
   clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
   comments: ["<!-- ", " -->"]
@@ -45,7 +46,14 @@ compress_html:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:name/
+    order:
+      - shortProject.md
+      - longerProjectTitle.md
+      - redirect.md
+      - project4.md
+      - project5.md
+      - project6.md
 
 sass:
   sass_dir: /assets/css/_sass
