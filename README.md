@@ -20,5 +20,3 @@ To test these changes, open a terminal inside the source folder and use `jekyll 
 The `--incremental` flag ensures that any changes you make are reflected in your browser in real time and the `--trace` option might be useful for debugging if things break while you are changing the source files.
 
 Once you have personalised and tested the site, you can create a new repo, upload these files and host your website from the repo.
-
-<a href="https://www.buymeacoffee.com/jitinnair" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
