@@ -36,15 +36,12 @@
 .projectTile a span {
   display: flex;
   justify-content: center;
-  color: $text-color ;
-  @media (prefers-color-scheme: dark) {
-    color: $text-color-dark;
-  }
 }
 
 .projectTile a span h2 {
   font-size: 1.5rem;
   padding: 1rem;
+  color: $projectbox-text;
 }
 
 .projectTile:hover a span h2 {
@@ -59,11 +56,7 @@
   font-size: 1.2rem;
   display: flex;
   padding: 1rem;
-  color: $text-color;
-
-  @media (prefers-color-scheme: dark) {
-    color: $text-color-dark;
-  }
+  color: $projectbox-text;
 }
 
 @include media-query($on-phone) {
