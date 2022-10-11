@@ -19,4 +19,10 @@ To test these changes, open a terminal inside the source folder and use `jekyll 
 
 The `--incremental` flag ensures that any changes you make are reflected in your browser in real time and the `--trace` option might be useful for debugging if things break while you are changing the source files.
 
-Once you have personalised and tested the site, you can create a new repo, upload these files and host your website from the repo.
+Once you have personalised and tested the site, you can create a new repo, upload these files and host your website from the repo. 
+
+PS: If you liked the theme, do star :star: it! Thanks!
+
+### Also check out:
+- [autoCV](https://github.com/jitinnair1/autoCV) - a LaTeX template which build and deploys using GitHub Actions, so you will always have ready link for your latest CV
+- [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
