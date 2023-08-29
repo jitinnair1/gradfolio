@@ -4,7 +4,7 @@ permalink: /archive/
 title: Archive
 ---
 
-<div>
+<div class="article-list">
 	{% for post in site.posts %}
 	{% unless post.next %}
 	<h3><small>{{ post.date | date: '%B %Y' }}</small></h3>
