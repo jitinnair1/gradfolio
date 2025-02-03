@@ -62,30 +62,12 @@ target="_blank">
 </a>
 {%- endif -%}
 
-{%- if site.quora -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'Quora' }}"
-class="social-button quora" itemprop="sameAs"
-href="https://www.quora.com/profile/{{ site.quora }}"
+{%- if site.bluesky -%}
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Bluesky' }}"
+class="social-button bluesky" itemprop="sameAs"
+href="https://bsky.app/profile/{{ site.bluesky }}"
 target="_blank">
-<i class="fab fa-quora"></i>
-</a>
-{%- endif -%}
-
-{%- if site.instagram -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'Instagram' }}"
-class="social-button instagram" itemprop="sameAs"
-href="https://www.instagram.com/{{ site.instagram }}"
-target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-{%- endif -%}
-
-{%- if site.stackoverflow -%}
-<a title="{{ _locale_string_follow | replace: '[NAME]', 'Stackoverflow' }}"
-class="social-button stackoverflow" itemprop="sameAs"
-href="https://stackoverflow.com/users/{{ site.stackoverflow }}"
-target="_blank">
-<i class="fab fa-brands fa-stack-overflow"></i>
+<i class="fab fa-bluesky"></i>
 </a>
 {%- endif -%}
 
