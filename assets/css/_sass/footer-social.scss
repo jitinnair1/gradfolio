@@ -37,7 +37,10 @@
 .fa-orcid,
 .fa-researchgate,
 .fa-bluesky,
-.fa-envelope {
+.fa-envelope,
+.fa-quora,
+.fa-instagram,
+.fa-stack-overflow {
   font-size: 25px;
 }
 
@@ -109,4 +112,39 @@
   color: #74C0FC;
   background: #fefefe;
   border-color: #74C0FC;
+}
+
+.rounded-social-buttons .social-button.quora {
+  background: #a82400;
+}
+
+.rounded-social-buttons .social-button.quora:hover, .rounded-social-buttons .social-button.quora:focus {
+  color: #a82400;
+  background: #fefefe;
+  border-color: #a82400;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background-clip: padding-box;
+  border: 0.125rem solid #cc2366;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #a82400;
+  background: #fefefe;
+  border-color: #a82400;
+}
+
+.rounded-social-buttons .social-button.stackoverflow {
+  background: #f48024;
+}
+
+.rounded-social-buttons .social-button.stackoverflow:hover, .rounded-social-buttons .social-button.stackoverflow:focus {
+  color: #f48024;
+  background: #fefefe;
+  border-color: #f48024;
 }
