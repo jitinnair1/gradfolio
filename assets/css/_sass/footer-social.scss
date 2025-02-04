@@ -30,16 +30,14 @@
           transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-twitter,
+.rounded-social-buttons,
 .fa-facebook-f,
 .fa-linkedin,
 .fa-github,
 .fa-orcid,
 .fa-researchgate,
-.fa-envelope
-.fa-quora
-.fa-instagram
-.fa-stack-overflow {
+.fa-bluesky,
+.fa-envelope {
   font-size: 25px;
 }
 
@@ -51,16 +49,6 @@
   color: #3b5998;
   background: #fefefe;
   border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
 }
 
 .rounded-social-buttons .social-button.linkedin {
@@ -113,37 +101,12 @@
   border-color: #5dd1b0;
 }
 
-.rounded-social-buttons .social-button.quora {
-  background: #a82400;
+.rounded-social-buttons .social-button.bluesky {
+  background: #74C0FC;
 }
 
-.rounded-social-buttons .social-button.quora:hover, .rounded-social-buttons .social-button.quora:focus {
-  color: #a82400;
+.rounded-social-buttons .social-button.bluesky:hover, .rounded-social-buttons .social-button.bluesky:focus {
+  color: #74C0FC;
   background: #fefefe;
-  border-color: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  color: #ffffff;
-  background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-    color: #a82400;
-    background: #fefefe;
-    border-color: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.stackoverflow {
-  background: #f48024;
-}
-
-.rounded-social-buttons .social-button.stackoverflow:hover, .rounded-social-buttons .social-button.stackoverflow:focus {
-  color: #f48024;
-  background: #fefefe;
-  border-color: #5dd1b0;
+  border-color: #74C0FC;
 }

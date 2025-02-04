@@ -13,7 +13,6 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-twitter: "#"
 linkedin: "#"
 stackoverflow: "#"
 github: "#"
@@ -22,7 +21,7 @@ orcid: "#"
 quora: "#"
 instagram: "#"
 facebook: "#"
-
+bluesky: "#"
 
 # Markdown
 highlighter: rouge
