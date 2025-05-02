@@ -1,6 +1,21 @@
 # Gradfolio
 
+<p align="center">
+<img src="https://snippets.jitin.xyz/assets/img/demo/grad_composite.png" alt="Composite example of the gradfolio theme"/>
+</p>
+
 responsive, dark-mode ready Jekyll theme designed for use as a personal website and portfolio. [Here's a live demo](https://jitinnair1.github.io/gradfolio/)
+
+## Preview
+
+<details>
+<summary>Light</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/grad_light.png" alt="Preview of gradfolio theme in light mode"/>
+</details>
+<details>
+<summary>Dark</summary>
+<img src="https://snippets.jitin.xyz/assets/img/demo/grad_dark.png" alt="Preview of gradfolio theme in dark mode"/>
+</details>
 
 ## Features
 - Responsive
