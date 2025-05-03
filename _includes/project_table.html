@@ -1,0 +1,29 @@
+<table class="project-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>URL</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for project in site.data.projects %}
+    <tr>
+      <td>{{ project.name }}</td>
+      <td>{{ project.description }}</td>
+      <td><a href="{{ project.url }}">Link</a></td>
+      <td>
+
+        {% assign tag_colors = site.data.tag_colors %}
+        
+        {% for tag in project.tags %}
+          {% assign color = tag_colors[tag] | default: "#888" %}
+          <span class="tag" style="--tag-color: {{ color }}">{{ tag }}</span>
+        {% endfor %}
+
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

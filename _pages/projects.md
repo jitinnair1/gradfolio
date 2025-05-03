@@ -41,5 +41,11 @@ published: true
   {% endfor %}
 
 	</div>
+    
+{% if site.data.projects %}
+    <h2>Other Projects</h2>
+    {% include project_table.html %}
+{% endif %}
 
 </div>
+

@@ -1,0 +1,12 @@
+- name: "Project Alpha"
+  description: "A tool for automating workflows."
+  url: "https://example.com/alpha"
+  tags: ["automation", "python", "web"]
+- name: "Project Beta"
+  description: "A web app for task management."
+  url: "https://example.com/beta"
+  tags: ["javascript", "react", "static"]
+- name: "Project Gamma"
+  description: "A static site generator."
+  url: "https://example.com/gamma"
+  tags: ["static", "cli", "python"]

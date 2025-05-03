@@ -1,0 +1,53 @@
+// Table styling
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  thead tr {
+    border-bottom: 3px solid #333; // Thick bottom line for header
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ddd; // Thin line for rows
+  }
+
+  tbody tr:last-child {
+    border-bottom: none; // No line on last row
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--tag-color);
+  }
+}
+
+// Responsive behavior
+@media (max-width: 600px) {
+  .project-table {
+    th, td {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}
