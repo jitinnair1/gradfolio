@@ -34,6 +34,7 @@ published: true
 </div>
 
 <div>
+  <h3>Other Projects</h3>
   {% if site.data.projects %}
     {% include project_table.html %}
   {% endif %}
