@@ -14,7 +14,7 @@ published: true
             <span>
               <h2>{{ project.title }}</h2>
               <br/>
-              <p>{{ project.description }}</p>
+              <p>{{ project.description | truncate: 55 }}</p>
             </span>
           </a>
         </div>
@@ -24,7 +24,7 @@ published: true
             <span>
               <h2>{{ project.title }}</h2>
               <br/>
-              <p>{{ project.description }}</p>
+              <p>{{ project.description | truncate: 55 }}</p>
             </span>
           </a>
         </div>
