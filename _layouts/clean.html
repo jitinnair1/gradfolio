@@ -15,8 +15,7 @@
 
         {% include mathjax.html %}
 
-        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+        {% include fontawesome.html %}
 
     </head>
 
@@ -26,22 +25,8 @@
                 {{ content }}
             </article>
         </main>
-
-        <footer>
-          <p class="copy">
-            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
-                    | Powered by Jekyll and
-                    <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>.
-                    Last updated on {{ site.time | date_to_long_string }}
-            </small>
-          </p>
-
-        {% include social-footer.html %}
-
-        </footer>
-
-        {% include analytics.html %}
-
+    
     </body>
 
+    {% include footer.html %}
 </html>
