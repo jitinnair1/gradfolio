@@ -24,7 +24,7 @@ responsive, dark-mode ready Jekyll theme designed for use as a personal website 
 - Easily link to your profiles on ResearchGate and ORCID
 
 ## Installation
-* Click on `Use this template`
+* Click on `Use this template` (somewhere on the top bar) after logging in to your GitHub account
 * Your new site should be ready at https://username.github.io/gradfolio/
 * You can now modify the contents and personalise the template
 
