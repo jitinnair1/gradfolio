@@ -89,5 +89,13 @@ target="_blank">
 </a>
 {%- endif -%}
 
+{%- if site.substack -%}
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Substack' }}"
+class="social-button substack" itemprop="sameAs"
+href="https://substack.com/@{{ site.substack }}"
+target="_blank">
+  <span class="custom-icon substack-logo"></span>
+</a>
+{%- endif -%}
 
 </div>

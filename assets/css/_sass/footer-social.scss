@@ -40,7 +40,8 @@
 .fa-envelope,
 .fa-quora,
 .fa-instagram,
-.fa-stack-overflow {
+.fa-stack-overflow,
+.fa-substack {
   font-size: 25px;
 }
 
@@ -147,4 +148,68 @@
   color: #f48024;
   background: #fefefe;
   border-color: #f48024;
+}
+
+.rounded-social-buttons .social-button.substack {
+  background: #ff6519;
+}
+
+.rounded-social-buttons .social-button.substack:hover, .rounded-social-buttons .social-button.substack:focus {
+  color: #ff6519;
+  background: #fefefe;
+  border-color: #ff6519;
+}
+
+//fontawesome does not have an existing logo for substack in https://fontawesome.com/search?ip=brands
+//so adding a custom CSS logo as seen here: https://codepen.io/GabZoFar/pen/MYyZwZW
+
+/*the middle bar of the substack logo acting as the positioning anchor*/
+.rounded-social-buttons .social-button .custom-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 1em;/*scales directly to the 25px font-size*/
+  height: 1em;
+  margin-top: -0.2em;/*micro-adjustment to align with font-awesome optical baselines*/
+}
+
+.substack-logo {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 35%;
+  height: 0.1em;
+  background: currentColor;/*inherits #fefefe and changes if the color changes*/
+  border-radius: 1px;
+}
+
+/*shared structural traits for the upper and lower logo components*/
+.substack-logo::before,
+.substack-logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: currentColor;
+}
+
+/*top horizontal line*/
+.substack-logo::before {
+  top: -0.2em;
+  height: 0.1em;
+  border-radius: 1px;
+}
+
+/*bottom ribbon component*/
+.substack-logo::after {
+  top: 0.2em;
+  height: 0.35em;
+  border-radius: 1px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    50% 60%,
+    0 100%
+  );
 }

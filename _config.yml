@@ -22,6 +22,7 @@ quora: "#"
 instagram: "#"
 facebook: "#"
 bluesky: "#"
+substack: "#"
 
 # Markdown
 highlighter: rouge
