@@ -21,7 +21,21 @@
         {% include mathjax.html %}
 
         <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+        <script type="text/javascript">
+          (function() {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            var showIcons = function() {
+              document.body.classList.add('fontawesome-loaded');
+            };
+            css.onload = showIcons;
+            css.onerror = showIcons;
+            setTimeout(showIcons, 1500);
+            document.getElementsByTagName('head')[0].appendChild(css);
+          })();
+        </script>
 
     </head>
 

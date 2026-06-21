@@ -1,11 +1,22 @@
 /* Social Icons for Footer from https://codepen.io/deutschland2k/pen/qKpdJX */
-
 .rounded-social-buttons {
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+//the font-awesome-loaded class is added to the body when fontawesome is loaded
+//this is done to make the fontawesome icons appear at the same time as the custome CSS-only logos
+//like the substack logo used below. The class is added in the default layout (_layouts/default.html)
+body.fontawesome-loaded .rounded-social-buttons {
+  opacity: 1;
 }
 
 .rounded-social-buttons .social-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
   position: relative;
   cursor: pointer;
   width: 2.125rem;
@@ -13,21 +24,20 @@
   border: 0.125rem solid transparent;
   padding: 0;
   text-decoration: none;
-  text-align: center;
   color: #fefefe;
   font-size: 1.5625rem;
   font-weight: normal;
-  line-height: 1.5em;
   border-radius: 1.6875rem;
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
   -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .rounded-social-buttons,
@@ -49,7 +59,8 @@
   background: #3b5998;
 }
 
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
   color: #3b5998;
   background: #fefefe;
   border-color: #3b5998;
@@ -59,7 +70,8 @@
   background: #007bb5;
 }
 
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
@@ -69,7 +81,8 @@
   background: #000000;
 }
 
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+.rounded-social-buttons .social-button.github:hover,
+.rounded-social-buttons .social-button.github:focus {
   color: #000000;
   background: #fefefe;
   border-color: #000000;
@@ -79,7 +92,8 @@
   background: #60c17d;
 }
 
-.rounded-social-buttons .social-button.email:hover, .rounded-social-buttons .social-button.email:focus {
+.rounded-social-buttons .social-button.email:hover,
+.rounded-social-buttons .social-button.email:focus {
   color: #60c17d;
   background: #fefefe;
   border-color: #000000;
@@ -89,7 +103,8 @@
   background: #a6ce3b;
 }
 
-.rounded-social-buttons .social-button.orcid:hover, .rounded-social-buttons .social-button.orcid:focus {
+.rounded-social-buttons .social-button.orcid:hover,
+.rounded-social-buttons .social-button.orcid:focus {
   color: #a6ce3b;
   background: #fefefe;
   border-color: #a6ce3b;
@@ -99,7 +114,8 @@
   background: #5dd1b0;
 }
 
-.rounded-social-buttons .social-button.researchgate:hover, .rounded-social-buttons .social-button.researchgate:focus {
+.rounded-social-buttons .social-button.researchgate:hover,
+.rounded-social-buttons .social-button.researchgate:focus {
   color: #5dd1b0;
   background: #fefefe;
   border-color: #5dd1b0;
@@ -109,7 +125,8 @@
   background: #74C0FC;
 }
 
-.rounded-social-buttons .social-button.bluesky:hover, .rounded-social-buttons .social-button.bluesky:focus {
+.rounded-social-buttons .social-button.bluesky:hover,
+.rounded-social-buttons .social-button.bluesky:focus {
   color: #74C0FC;
   background: #fefefe;
   border-color: #74C0FC;
@@ -119,7 +136,8 @@
   background: #a82400;
 }
 
-.rounded-social-buttons .social-button.quora:hover, .rounded-social-buttons .social-button.quora:focus {
+.rounded-social-buttons .social-button.quora:hover,
+.rounded-social-buttons .social-button.quora:focus {
   color: #a82400;
   background: #fefefe;
   border-color: #a82400;
@@ -127,14 +145,15 @@
 
 .rounded-social-buttons .social-button.instagram {
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   background-clip: padding-box;
   border: 0.125rem solid #cc2366;
 }
 
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
   color: #a82400;
   background: #fefefe;
   border-color: #a82400;
@@ -144,7 +163,8 @@
   background: #f48024;
 }
 
-.rounded-social-buttons .social-button.stackoverflow:hover, .rounded-social-buttons .social-button.stackoverflow:focus {
+.rounded-social-buttons .social-button.stackoverflow:hover,
+.rounded-social-buttons .social-button.stackoverflow:focus {
   color: #f48024;
   background: #fefefe;
   border-color: #f48024;
@@ -154,7 +174,8 @@
   background: #ff6519;
 }
 
-.rounded-social-buttons .social-button.substack:hover, .rounded-social-buttons .social-button.substack:focus {
+.rounded-social-buttons .social-button.substack:hover,
+.rounded-social-buttons .social-button.substack:focus {
   color: #ff6519;
   background: #fefefe;
   border-color: #ff6519;
@@ -164,28 +185,20 @@
 //so adding a custom CSS logo as seen here: https://codepen.io/GabZoFar/pen/MYyZwZW
 
 /*the middle bar of the substack logo acting as the positioning anchor*/
-.rounded-social-buttons .social-button .custom-icon {
+.rounded-social-buttons .social-button .substack-logo {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 1em;/*scales directly to the 25px font-size*/
-  height: 1em;
-  margin-top: -0.2em;/*micro-adjustment to align with font-awesome optical baselines*/
-}
-
-.substack-logo {
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 35%;
+  width: 0.7em;
   height: 0.1em;
-  background: currentColor;/*inherits #fefefe and changes if the color changes*/
+  background: currentColor;
   border-radius: 1px;
+  margin-top: -0.2em;
 }
 
 /*shared structural traits for the upper and lower logo components*/
-.substack-logo::before,
-.substack-logo::after {
+.rounded-social-buttons .social-button .substack-logo::before,
+.rounded-social-buttons .social-button .substack-logo::after {
   content: "";
   position: absolute;
   left: 0;
@@ -194,22 +207,20 @@
 }
 
 /*top horizontal line*/
-.substack-logo::before {
+.rounded-social-buttons .social-button .substack-logo::before {
   top: -0.2em;
   height: 0.1em;
   border-radius: 1px;
 }
 
 /*bottom ribbon component*/
-.substack-logo::after {
+.rounded-social-buttons .social-button .substack-logo::after {
   top: 0.2em;
   height: 0.35em;
   border-radius: 1px;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    50% 60%,
-    0 100%
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      50% 60%,
+      0 100%);
 }
