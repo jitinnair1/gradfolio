@@ -34,7 +34,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button:hover,
-.rounded-social-buttons .social-button:focus {
+.rounded-social-buttons .social-button:focus-visible {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
@@ -60,7 +60,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.facebook:hover,
-.rounded-social-buttons .social-button.facebook:focus {
+.rounded-social-buttons .social-button.facebook:focus-visible {
   color: #3b5998;
   background: #fefefe;
   border-color: #3b5998;
@@ -71,7 +71,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.linkedin:hover,
-.rounded-social-buttons .social-button.linkedin:focus {
+.rounded-social-buttons .social-button.linkedin:focus-visible {
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
@@ -82,7 +82,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.github:hover,
-.rounded-social-buttons .social-button.github:focus {
+.rounded-social-buttons .social-button.github:focus-visible {
   color: #000000;
   background: #fefefe;
   border-color: #000000;
@@ -93,7 +93,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.email:hover,
-.rounded-social-buttons .social-button.email:focus {
+.rounded-social-buttons .social-button.email:focus-visible {
   color: #60c17d;
   background: #fefefe;
   border-color: #000000;
@@ -104,7 +104,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.orcid:hover,
-.rounded-social-buttons .social-button.orcid:focus {
+.rounded-social-buttons .social-button.orcid:focus-visible {
   color: #a6ce3b;
   background: #fefefe;
   border-color: #a6ce3b;
@@ -115,7 +115,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.researchgate:hover,
-.rounded-social-buttons .social-button.researchgate:focus {
+.rounded-social-buttons .social-button.researchgate:focus-visible {
   color: #5dd1b0;
   background: #fefefe;
   border-color: #5dd1b0;
@@ -126,7 +126,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.bluesky:hover,
-.rounded-social-buttons .social-button.bluesky:focus {
+.rounded-social-buttons .social-button.bluesky:focus-visible {
   color: #74C0FC;
   background: #fefefe;
   border-color: #74C0FC;
@@ -137,7 +137,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.quora:hover,
-.rounded-social-buttons .social-button.quora:focus {
+.rounded-social-buttons .social-button.quora:focus-visible {
   color: #a82400;
   background: #fefefe;
   border-color: #a82400;
@@ -172,7 +172,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.stackoverflow:hover,
-.rounded-social-buttons .social-button.stackoverflow:focus {
+.rounded-social-buttons .social-button.stackoverflow:focus-visible {
   color: #f48024;
   background: #fefefe;
   border-color: #f48024;
@@ -183,7 +183,7 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.substack:hover,
-.rounded-social-buttons .social-button.substack:focus {
+.rounded-social-buttons .social-button.substack:focus-visible {
   color: #ff6519;
   background: #fefefe;
   border-color: #ff6519;
