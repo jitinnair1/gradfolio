@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
   {% unless layout.hide_header_nav or page.hide_header_nav %}
-  <h1 class="post-headline">{{site.title}}</h1>
-  <h3 class="post-description">{{site.description}}</h3>
-  {% include navigation.html %}
+  <header>
+    <h1 class="post-headline">{{site.title}}</h1>
+    <h3 class="post-description">{{site.description}}</h3>
+    {% include navigation.html %}
+  </header>
   {% endunless %}
 
   {% seo %}

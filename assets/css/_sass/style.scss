@@ -1,4 +1,4 @@
-html, body {
+html {
   height: 100%;
 }
 
@@ -12,7 +12,10 @@ body {
   background-color: $body-bg;
   padding: 2em 1em;
   text-rendering: optimizeLegibility;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
 
   @media (prefers-color-scheme: dark) {
     background-color: $body-bg-dark;
@@ -20,7 +23,16 @@ body {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+main {
+  flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.8;
@@ -32,7 +44,8 @@ h1,h2,h3,h4,h5,h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     color: $text-color;
 
     @media (prefers-color-scheme: dark) {
@@ -58,6 +71,7 @@ p a {
   -webkit-transition: box-shadow ease 1s;
   -moz-transition: box-shadow ease 1s;
   transition: box-shadow ease 1s;
+
   &:hover {
     color: lighten($background-color, 50%);
     -webkit-box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
@@ -85,7 +99,8 @@ code {
   font-size: 0.7*$base-font-size;
   border-radius: 3px;
   border: 1px solid $brand-color;
-  > code {
+
+  >code {
     border: none;
   }
 }
@@ -101,13 +116,14 @@ code {
 blockquote {
   border-left: 2px solid $brand-color;
   padding-left: 1em;
-  font-family: Georgia,Times,Times New Roman,serif;
+  font-family: Georgia, Times, Times New Roman, serif;
   font-size: 0.9*$base-font-size;
   font-style: italic;
 }
 
 
-.headline, .post-headline {
+.headline,
+.post-headline {
   font-size: 2em;
   margin-bottom: -0.4em;
 
@@ -128,7 +144,8 @@ blockquote {
     }
   }
 
-  a, span {
+  a,
+  span {
     padding: 7px 18px;
     border: 1px solid #eee;
     margin-left: -4px;
@@ -148,9 +165,11 @@ blockquote {
 .video {
   width: 100%;
   height: 360px;
+
   @include media-query($on-laptop) {
     height: 300px;
   }
+
   @include media-query($on-palm) {
     height: 180px;
   }
@@ -166,10 +185,12 @@ blockquote {
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
 .scroll::-webkit-scrollbar {
-  display: none; }
+  display: none;
+}
 
 
 /* Button */
@@ -188,9 +209,10 @@ blockquote {
   transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
   background: #fff;
   color: #222222;
+
   :hover {
-      border-color: #000000;
-      background: #f7f7f7;
+    border-color: #000000;
+    background: #f7f7f7;
   }
 }
 
@@ -198,5 +220,3 @@ blockquote {
 .article-list {
   margin: 1em 0;
 }
-
-
