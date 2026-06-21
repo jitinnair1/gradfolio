@@ -15,7 +15,7 @@ twitter: "your_username"
 
 Now add a block for the new entry in `_includes/social-footer.html` (you can just duplicate any other existing block in the file and modify it as required):
 
-* Change the display name for the title (as in the `{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}`).
+* Change the display name for the title (in the {% raw %}`{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}`{% endraw %}).
 * Update the href attribute for the new entry. Whatever you use as the key ("your_username" in this example) in the `_config.yml` file will be appended to the url as seen below.
 * Also, update the `fa-*` class in the HTML block below for the new entry. You can find the classes here: https://fontawesome.com/search?ip=brands
 
@@ -35,7 +35,9 @@ Now add the styles for the new entry in `assets/css/_sass/footer-social.scss`:
 
 (again, you can just reuse an old block in the file)
 
-The pattern below (which is what you would add) works by having a background colour for the icon which is then "inverted" on hover. You can add a background from the brand colour of the social media platform in question.
+The pattern below (which is what you would add) works by having a background colour for the icon which is then "inverted" on hover.
+
+You can add a background from the brand colour of the social media platform in question.
 
 ```scss
 .rounded-social-buttons .fa-twitter,
