@@ -2,22 +2,32 @@
 
 //For light mode
 pre.highlight {
-  background-color: #ffffff;
+  background-color: #f6f8fa;
+  border: 1px solid #eaecef;
   padding: 7px 7px 7px 10px;
-  // border: 20px solid yellowgreen;
-  -moz-box-shadow: 1px 1px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 1px 1px rgba(0,0,0,0.1);
-  box-shadow: 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px 1px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 1px 1px rgba(0,0,0,0.05);
   border-radius: 3px;
   margin: 20px 0 20px 0;
   overflow: auto;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  color:#000;
-  background-color: #ffffff;
-  border-radius: 1px;
+  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+  color: #24292e;
+  background-color: #f6f8fa;
+  border: 1px solid #eaecef;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre code {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+  font-size: inherit !important;
 }
 
 .highlight, .highlight .w {
@@ -101,21 +111,23 @@ code {
 
 pre.highlight {
   background-color: #263238;
+  border: 1px solid #37474f;
   padding: 7px 7px 7px 10px;
-  // border: 20px solid yellowgreen;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 3px 3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.15);
+  box-shadow: 3px 3px rgba(0,0,0,0.15);
   border-radius: 3px;
   margin: 20px 0 20px 0;
   overflow: auto;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  color:#C9D1D9;
+  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+  color: #C9D1D9;
   background-color: #263238;
-  border-radius: 1px;
+  border: 1px solid #37474f;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }
 
 .highlight .c, .highlight .cd {
@@ -324,7 +336,7 @@ code {
 }
 .highlight {
   color: #f8f8f2;
-  background-color: #49483e;
+  background-color: #263238;
 }
 
 }
