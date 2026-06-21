@@ -144,19 +144,27 @@ body.fontawesome-loaded .rounded-social-buttons {
 }
 
 .rounded-social-buttons .social-button.instagram {
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) border-box;
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) border-box;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) border-box;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-  background-clip: padding-box;
-  border: 0.125rem solid #cc2366;
+  border: 0.125rem solid transparent;
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
-.rounded-social-buttons .social-button.instagram:focus {
-  color: #a82400;
-  background: #fefefe;
-  border-color: #a82400;
+.rounded-social-buttons .social-button.instagram:focus-visible {
+  background: linear-gradient(#fefefe, #fefefe) padding-box,
+    linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) border-box;
+  border-color: transparent;
+}
+
+.rounded-social-buttons .social-button.instagram:hover .fa-instagram,
+.rounded-social-buttons .social-button.instagram:focus-visible .fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .rounded-social-buttons .social-button.stackoverflow {
