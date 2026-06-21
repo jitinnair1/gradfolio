@@ -19,6 +19,7 @@ Now add a block for the new entry in `_includes/social-footer.html` (you can jus
 * Update the href attribute for the new entry. Whatever you use as the key ("your_username" in this example) in the `_config.yml` file will be appended to the url as seen below.
 * Also, update the `fa-*` class in the HTML block below for the new entry. You can find the classes here: https://fontawesome.com/search?ip=brands
 
+{% raw %}
 ```html
 {%- if site.twitter -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}"
@@ -27,8 +28,8 @@ href="https://www.twitter.com/{{ site.twitter }}" itemprop="sameAs"
 target="_blank">
 <i class="fab fa-twitter"></i>
 </a>
-{%- endif -%}
 ```
+{% endraw %}
 
 Now add the styles for the new entry in `assets/css/_sass/footer-social.scss`:
 
