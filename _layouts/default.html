@@ -4,63 +4,68 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
-        <h1 class="post-headline">{{site.title}}</h1>
-        <h3 class="post-description">{{site.description}}</h3>
+  {% unless layout.hide_header_nav or page.hide_header_nav %}
+  <h1 class="post-headline">{{site.title}}</h1>
+  <h3 class="post-description">{{site.description}}</h3>
+  {% include navigation.html %}
+  {% endunless %}
 
-        {% include navigation.html %}
+  {% seo %}
 
-        {% seo %}
+  {% include favicon.html %}
 
-        {% include favicon.html %}
+  {% include mathjax.html %}
 
-        {% include mathjax.html %}
+  <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
+  <script type="text/javascript">
+    (function () {
+      var css = document.createElement('link');
+      css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css';
+      css.rel = 'stylesheet';
+      css.type = 'text/css';
+      //this class is added to the body when fontawesome is loaded
+      //this is done to make the fontawesome icons appear at the same time as the custome CSS-only logos
+      var showIcons = function () {
+        document.body.classList.add('fontawesome-loaded');
+      };
+      css.onload = showIcons;
+      css.onerror = showIcons;
+      setTimeout(showIcons, 1500);
+      document.getElementsByTagName('head')[0].appendChild(css);
+    })();
+  </script>
 
-        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript">
-          (function() {
-            var css = document.createElement('link');
-            css.href = 'https://use.fontawesome.com/releases/v6.7.2/css/all.css';
-            css.rel = 'stylesheet';
-            css.type = 'text/css';
-            var showIcons = function() {
-              document.body.classList.add('fontawesome-loaded');
-            };
-            css.onload = showIcons;
-            css.onerror = showIcons;
-            setTimeout(showIcons, 1500);
-            document.getElementsByTagName('head')[0].appendChild(css);
-          })();
-        </script>
+</head>
 
-    </head>
+<body>
+  <main>
+    <article>
+      {{ content }}
+    </article>
+  </main>
 
-    <body>
-        <main>
-            <article>
-                {{ content }}
-            </article>
-        </main>
+  <footer>
+    <p class="copy">
+      <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
+        | Powered by Jekyll and
+        <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>.
+        Last updated on {{ site.time | date_to_long_string }}
+      </small>
+    </p>
 
-        <footer>
-          <p class="copy">
-            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
-                    | Powered by Jekyll and
-                    <a target="_blank" href="https://github.com/jitinnair1/gradfolio/">Gradfolio</a>.
-                    Last updated on {{ site.time | date_to_long_string }}
-            </small>
-          </p>
+    {% unless layout.hide_social_footer or page.hide_social_footer %}
+    {% include social-footer.html %}
+    {% endunless %}
 
-        {% include social-footer.html %}
+  </footer>
 
-        </footer>
+  {% include analytics.html %}
 
-        {% include analytics.html %}
-
-    </body>
+</body>
 
 </html>
